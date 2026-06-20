@@ -1416,7 +1416,7 @@ body {
 /* ==========================================================================
    RESPONSIVE DESIGN MEDIA QUERIES
    ========================================================================== */
-@media (max-width: 1100px) {
+@media screen and (max-width: 1100px) {
   .app-layout {
     grid-template-columns: 1fr;
     height: auto;
@@ -1426,6 +1426,7 @@ body {
   }
   .preview-panel {
     height: auto;
+    overflow: visible !important;
   }
   .a4-sheet {
     max-height: none;
@@ -1433,7 +1434,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .app-header {
     flex-direction: column;
     gap: 1rem;
@@ -2931,7 +2932,7 @@ body {
   padding: 2rem 0 !important;
 }
 
-@media (max-width: 640px) {
+@media screen and (max-width: 640px) {
   .download-options-container {
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -3028,20 +3029,20 @@ body {
    ========================================================================== */
 
 /* 1. Hide stepper text labels on mobile screens to prevent wrapping/overlap */
-@media (max-width: 520px) {
+@media screen and (max-width: 520px) {
   .step-node label {
     display: none !important;
   }
 }
 
 /* 2. Adjust templates selector grid to prevent squeezing */
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
   .templates-grid {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 1.5rem !important;
   }
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .templates-grid {
     grid-template-columns: 1fr !important;
     gap: 1.25rem !important;
@@ -3055,7 +3056,7 @@ body {
 }
 
 /* 3. Stack preview actions bar on mobile screens */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .preview-actions-bar {
     flex-direction: column !important;
     align-items: stretch !important;
@@ -3072,7 +3073,7 @@ body {
 }
 
 /* 4. Frosted glass authentication card scaling on tiny devices */
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .auth-card {
     padding: 1.5rem !important;
     max-width: 95% !important;
