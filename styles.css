@@ -3021,5 +3021,72 @@ body {
   font-weight: 600;
 }
 
+/* ==========================================================================
+   MOBILE & TABLET RESPONSIVENESS OVERRIDES
+   ========================================================================== */
 
+/* 1. Hide stepper text labels on mobile screens to prevent wrapping/overlap */
+@media (max-width: 520px) {
+  .step-node label {
+    display: none !important;
+  }
+}
 
+/* 2. Adjust templates selector grid to prevent squeezing */
+@media (max-width: 900px) {
+  .templates-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+}
+@media (max-width: 600px) {
+  .templates-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+  }
+  .selector-container {
+    gap: 1.5rem !important;
+  }
+  .selector-header h2 {
+    font-size: 1.6rem !important;
+  }
+}
+
+/* 3. Stack preview actions bar on mobile screens */
+@media (max-width: 768px) {
+  .preview-actions-bar {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 0.75rem !important;
+    padding: 1rem !important;
+  }
+  .preview-actions-bar .action-item {
+    justify-content: space-between !important;
+    width: 100% !important;
+  }
+  .preview-actions-bar button {
+    width: 100% !important;
+  }
+}
+
+/* 4. Frosted glass authentication card scaling on tiny devices */
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 1.5rem !important;
+    max-width: 95% !important;
+  }
+  .auth-header h3 {
+    font-size: 1.4rem !important;
+  }
+  .auth-header p {
+    font-size: 0.775rem !important;
+  }
+}
+
+/* 5. Smooth native touch scrolling for scroll containers */
+.panel-scroll-container,
+.wizard-body,
+.layout-selector-screen,
+.preview-panel {
+  -webkit-overflow-scrolling: touch;
+}

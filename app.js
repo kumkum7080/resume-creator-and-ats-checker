@@ -1950,6 +1950,8 @@ Requirements:
         });
       }
     }
+    // Scale preview sheet if on tablet/mobile screens
+    scaleResumePreview();
   }
 
   /* ==========================================================================
@@ -2685,5 +2687,40 @@ Requirements:
   // Populate dynamic select dropdown and visual gallery grid
   populateTemplateSelect();
   renderTemplatesGrid();
+
+  /* ==========================================================================
+     DYNAMIC MOBILE A4 SHEET SCALING
+     ========================================================================== */
+  function scaleResumePreview() {
+    const sheet = document.getElementById('resume-a4-sheet');
+    if (!sheet) return;
+    
+    const container = sheet.parentElement;
+    if (!container) return;
+    
+    // Reset styles to measure naturally
+    sheet.style.transform = '';
+    sheet.style.transformOrigin = '';
+    container.style.height = '';
+    
+    // Get actual width of parent container
+    const containerWidth = container.clientWidth;
+    const sheetWidth = 800; // Base width of the A4 sheet on desktop
+    
+    if (containerWidth < sheetWidth && containerWidth > 0) {
+      const scale = containerWidth / sheetWidth;
+      sheet.style.transform = `scale(${scale})`;
+      sheet.style.transformOrigin = 'top center';
+      
+      // Calculate scaled height to set container height and avoid empty spaces
+      const sheetHeight = sheet.offsetHeight;
+      const scaledHeight = sheetHeight * scale;
+      container.style.height = `${scaledHeight + 20}px`;
+    }
+  }
+
+  // Hook up scaling to window resizing and page load
+  window.addEventListener('resize', scaleResumePreview);
+  setTimeout(scaleResumePreview, 100); // Small timeout to ensure rendering is complete
 
 });
