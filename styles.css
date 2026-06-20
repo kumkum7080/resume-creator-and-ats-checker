@@ -1518,6 +1518,8 @@ body {
     max-width: 100% !important;
     height: 297mm !important;
     max-height: 297mm !important;
+    transform: none !important;
+    transform-origin: unset !important;
     overflow: hidden !important;
     box-shadow: none !important;
     border: none !important;

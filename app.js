@@ -2701,6 +2701,8 @@ Requirements:
     // Reset styles to measure naturally
     sheet.style.transform = '';
     sheet.style.transformOrigin = '';
+    sheet.style.width = '';
+    sheet.style.height = '';
     container.style.height = '';
     
     // Get actual width of parent container
@@ -2709,12 +2711,15 @@ Requirements:
     
     if (containerWidth < sheetWidth && containerWidth > 0) {
       const scale = containerWidth / sheetWidth;
+      
+      // Force the sheet to render at its full desktop size (800x1130) before scaling
+      sheet.style.width = '800px';
+      sheet.style.height = '1130px';
       sheet.style.transform = `scale(${scale})`;
       sheet.style.transformOrigin = 'top center';
       
       // Calculate scaled height to set container height and avoid empty spaces
-      const sheetHeight = sheet.offsetHeight;
-      const scaledHeight = sheetHeight * scale;
+      const scaledHeight = 1130 * scale;
       container.style.height = `${scaledHeight + 20}px`;
     }
   }
