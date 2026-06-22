@@ -93,21 +93,18 @@ function Home() {
 
           <div className="landing-features" style={{ marginTop: "80px" }}>
             <div className="feature-card">
-              <div className="feature-icon">🎯</div>
               <h3>ATS Match Scoring</h3>
               <p>
                 Analyze structural quality, key competency match, action verbs, and links overlap against any job description.
               </p>
             </div>
             <div className="feature-card">
-              <div className="feature-icon">💎</div>
               <h3>120+ Professional Designs</h3>
               <p>
                 Switch between 120 elegant templates (Obsidian Executive, Emerald Executive, Ruby Timeline) and custom layouts instantly.
               </p>
             </div>
             <div className="feature-card">
-              <div className="feature-icon">⚡</div>
               <h3>Live Optimization</h3>
               <p>
                 Watch your match rating increase in real-time as you write and incorporate missing technical keywords in the editor.
