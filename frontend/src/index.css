@@ -71,10 +71,21 @@ body {
   -webkit-font-smoothing: antialiased;
   background-image: 
     radial-gradient(at 50% 0%, rgba(239, 68, 68, 0.07) 0px, transparent 50%),
+    url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20200%20200%27%20width%3D%27200%27%20height%3D%27200%27%3E%0A%20%20%3C%21--%20Education%20cap%20--%3E%0A%20%20%3Cpath%20d%3D%27M30%2C30%20L50%2C20%20L70%2C30%20L50%2C40%20Z%20M40%2C35%20L40%2C45%20C40%2C50%2060%2C50%2060%2C45%20L60%2C35%27%20fill%3D%27none%27%20stroke%3D%27%232b2d35%27%20stroke-width%3D%271.2%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%20/%3E%0A%20%20%3Cpath%20d%3D%27M70%2C30%20L73%2C42%20L70%2C45%27%20fill%3D%27none%27%20stroke%3D%27%232b2d35%27%20stroke-width%3D%271.2%27%20stroke-linecap%3D%27round%27%20/%3E%0A%20%20%3C%21--%20Document%20--%3E%0A%20%20%3Cpath%20d%3D%27M120%2C15%20L140%2C15%20L150%2C25%20L150%2C50%20L120%2C50%20Z%27%20fill%3D%27none%27%20stroke%3D%27%232b2d35%27%20stroke-width%3D%271.2%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%20/%3E%0A%20%20%3Cpath%20d%3D%27M140%2C15%20L140%2C25%20L150%2C25%27%20fill%3D%27none%27%20stroke%3D%27%232b2d35%27%20stroke-width%3D%271.2%27%20/%3E%0A%20%20%3Cpath%20d%3D%27M126%2C27%20L135%2C27%20M126%2C34%20L144%2C34%20M126%2C41%20L144%2C41%27%20fill%3D%27none%27%20stroke%3D%27%232b2d35%27%20stroke-width%3D%271.2%27%20stroke-linecap%3D%27round%27%20/%3E%0A%20%20%3C%21--%20Briefcase%20--%3E%0A%20%20%3Cpath%20d%3D%27M35%2C115%20L65%2C115%20L65%2C135%20L35%2C135%20Z%27%20fill%3D%27none%27%20stroke%3D%27%232b2d35%27%20stroke-width%3D%271.2%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%20/%3E%0A%20%20%3Cpath%20d%3D%27M45%2C115%20L45%2C110%20L55%2C110%20L55%2C115%27%20fill%3D%27none%27%20stroke%3D%27%232b2d35%27%20stroke-width%3D%271.2%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%20/%3E%0A%20%20%3Ccircle%20cx%3D%2750%27%20cy%3D%27125%27%20r%3D%272%27%20fill%3D%27none%27%20stroke%3D%27%232b2d35%27%20stroke-width%3D%271.2%27%20/%3E%0A%20%20%3C%21--%20Pen%20--%3E%0A%20%20%3Cpath%20d%3D%27M140%2C135%20L155%2C120%20L160%2C125%20L145%2C140%20Z%20M140%2C135%20L137%2C138%20L140%2C135%27%20fill%3D%27none%27%20stroke%3D%27%232b2d35%27%20stroke-width%3D%271.2%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%20/%3E%0A%20%20%3C%21--%20Checked%20badge%20--%3E%0A%20%20%3Ccircle%20cx%3D%27100%27%20cy%3D%2785%27%20r%3D%278%27%20fill%3D%27none%27%20stroke%3D%27%232b2d35%27%20stroke-width%3D%271.2%27%20/%3E%0A%20%20%3Cpath%20d%3D%27M97%2C85%20L99%2C87%20L103%2C83%27%20fill%3D%27none%27%20stroke%3D%27%232b2d35%27%20stroke-width%3D%271.2%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%20/%3E%0A%20%20%3C%21--%20Lightbulb%20--%3E%0A%20%20%3Cpath%20d%3D%27M93%2C152%20C88%2C146%2088%2C137%2093%2C131%20C98%2C125%20107%2C125%20112%2C131%20C117%2C137%20117%2C146%20112%2C152%20L109%2C157%20L96%2C157%20Z%27%20fill%3D%27none%27%20stroke%3D%27%232b2d35%27%20stroke-width%3D%271.2%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%20/%3E%0A%20%20%3Cpath%20d%3D%27M96%2C160%20L109%2C160%20M98%2C163%20L107%2C163%27%20fill%3D%27none%27%20stroke%3D%27%232b2d35%27%20stroke-width%3D%271.2%27%20/%3E%0A%20%20%3C%21--%20Gear%20--%3E%0A%20%20%3Ccircle%20cx%3D%27165%27%20cy%3D%2770%27%20r%3D%275%27%20fill%3D%27none%27%20stroke%3D%27%232b2d35%27%20stroke-width%3D%271.2%27%20/%3E%0A%20%20%3Cpath%20d%3D%27M165%2C62%20L165%2C64%20M165%2C76%20L165%2C78%20M157%2C70%20L159%2C70%20M171%2C70%20L173%2C70%27%20fill%3D%27none%27%20stroke%3D%27%232b2d35%27%20stroke-width%3D%271.2%27%20stroke-linecap%3D%27round%27%20/%3E%0A%3C/svg%3E"),
     linear-gradient(rgba(255, 255, 255, 0.007) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.007) 1px, transparent 1px);
-  background-size: 100% 100%, 40px 40px, 40px 40px;
+  background-size: 100% 100%, 300px 300px, 40px 40px, 40px 40px;
   background-attachment: fixed;
+  animation: floatBackground 80s linear infinite;
+}
+
+@keyframes floatBackground {
+  0% {
+    background-position: center top, 0px 0px, 0px 0px, 0px 0px;
+  }
+  100% {
+    background-position: center top, 300px 300px, 0px 0px, 0px 0px;
+  }
 }
 
 /* Scrollbar Customization */
