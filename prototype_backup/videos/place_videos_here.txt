@@ -1,0 +1,10 @@
+Add your 6 MP4 video files in this folder.
+Please name them exactly:
+- video1.mp4
+- video2.mp4
+- video3.mp4
+- video4.mp4
+- video5.mp4
+- video6.mp4
+
+These videos will play back-to-back as a motion background on the login/signup page.

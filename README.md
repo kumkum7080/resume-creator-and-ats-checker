@@ -1,44 +1,36 @@
-# Resume ATS Score Checker & Optimizer
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-A premium, high-aesthetic web utility built for job seekers. It calculates an ATS compatibility score, parses uploaded PDF resumes in the browser, extracts key terminology from job descriptions, highlights missing keywords, scans for formatting errors, and lets users optimize their resumes in real-time.
+## Getting Started
 
-Built as a submission for the **Digital Heroes** trial task.
+First, run the development server:
 
-## Features
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-1. **Client-Side PDF Extraction**: Upload your resume PDF and parse it directly in the browser using PDF.js. No backend server required!
-2. **ATS Match Scoring**: Analyzes the overlap between your resume and the target Job Description, giving you an overall rating and detailed breakdowns.
-3. **Keyword Identifier**: Automatically highlights core competencies, hard skills, and soft skills missing from your resume.
-4. **Live Resume Optimizer**: A side-by-side view where you can edit your resume and watch your ATS score rise dynamically as you insert keywords.
-5. **Formatting Scan**: Detects structure irregularities, checks contact links (LinkedIn, GitHub), and flags non-actionable buzzwords (e.g. "responsible for").
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Technical Details
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-- **Core**: Vanilla HTML5, CSS3, and ES6+ JavaScript.
-- **External Dependency**: `pdfjs-dist` (loaded via CDN) for browser-based PDF parsing.
-- **Styling**: Vanilla CSS utilizing CSS Custom Properties for colors, fluid grids, premium dark glassmorphism effects, and responsive components.
-- **Icons**: Custom inline SVGs.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Local Development
+## Learn More
 
-To run this project locally:
+To learn more about Next.js, take a look at the following resources:
 
-1. Clone or download the repository.
-2. Spin up a local development server using:
-   ```bash
-   python -m http.server 8000
-   ```
-   or open `index.html` directly in your browser.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## Deployment
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-To deploy this application to **Vercel** for free:
-1. Push this codebase to a public GitHub repository.
-2. Import the repository into your Vercel Dashboard.
-3. Vercel will automatically deploy it. No configuration needed!
+## Deploy on Vercel
 
----
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-**Developer**: Kumkum Kushwaha  
-**Email**: [kumkumkushwaha7080@gmail.com](mailto:kumkumkushwaha7080@gmail.com)  
-**Submission for**: [Digital Heroes](https://digitalheroesco.com)
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
