@@ -11,6 +11,9 @@ const authMiddleware = require("./middleware/auth");
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+// Health check endpoint for Render
+app.get("/healthz", (req, res) => res.status(200).send("OK"));
+
 // Initialize Stripe if keys are configured
 const stripe = process.env.STRIPE_SECRET_KEY ? stripeLib(process.env.STRIPE_SECRET_KEY) : null;
 
